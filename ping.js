@@ -19,7 +19,7 @@ exports.onChatMessage = {
 exports.ping = {
     description: "Ping!",
     execute: (command, parameters, message) => {
-        if(this.messageNumber >= 5) {
+        if(this.messageNumber >= 2) {
             this.api.say("Pong!");
             this.messageNumber = 0;
         }
